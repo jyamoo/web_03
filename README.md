@@ -1,2 +1,2 @@
-# web_03
-web homepage project
+# jyamoo
+homepage project
