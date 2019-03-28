@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*css reset*/
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background-image:url(../images/bg_grid.gif);}
+
+/*header*/
+#header_wrap{width: 1000px; height: 150px; background-color:orange; margin:0 auto;padding:10px;}
+div.logo{display:inline-block; background-color: #f00; width:300px; height:130px;}
+nav.nav_wrap{display:inline-block; background-color: #0f0; width: 680px; height: 130px;}
+
+/*content*/
+div#content_wrap{width: 1000px; height: 500px; background-color:skyblue; margin:0 auto;padding:10px;}
+
+/*footer*/
+footer#footer_wrap{width: 1000px; height: 150px; background-color:violet; margin:0 auto;padding:10px;}
