@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style: none;}
+		a:link,a:visited{color:#000; text-decoration: none;}
+
+		body{background-image:url(../images/bg_grid.gif)}
+
+		div{width: 300px; height: 300px;}
+		div.box1{background-color:skyblue; position:absolute; top:100px; left:100px;}
+		div.box2{background-color:blue; position: absolute; z-index: 1}
+		div.box3{background-color:darkblue; position: absolute;}
+		div.box4{width: 400px; height: 400px; background-color:#000; position: relative;}
+	</style>
+</head>
+<body>
+	<div class="box_wrap">
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+	</div>
+</body>
+</html>
