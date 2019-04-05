@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<style>
+		/*reset*/
+		*{margin:0; padding:0;}
+		li{list-style: none;}
+		a:link,a:visited{color:#000; text-decoration: none;}
+		.clearfix:after{content:""; clear:both; display: block}
+
+		/*header layout*/
+		header#main_header{width: 960px; height: 160px; margin:0 auto; background-color: skyblue; position: relative;}
+		header#main_header>h1{width: 150px; height: 160px; background-color: red; text-align: center; line-height: 160px;}
+		header#main_header>nav.nav_gnb{position: absolute;width: 400px;height: 60px; background-color: pink; top:0; right: 0px;}
+		header#main_header>nav.nav_lnb{position: absolute;width: 700px;height: 60px; background-color: #fff; bottom: 0px; right: 0; text-align: center; line-height: 60px;}
+		header#main_header>nav.nav_lnb>ul{width: 100%}
+		header#main_header>nav.nav_lnb>ul>li{float:left; width: 140px}
+		header#main_header>nav.nav_lnb>ul>li>a{display:block;}
+		header#main_header>nav.nav_lnb>ul>li>a:hover{color:#fff; background-color: #000;}
+
+
+		section#content{width: 960px; height: 500px; margin:0 auto; background-color: #629ead; position: relative;}
+		section#content>nav.main_section{width: 750px; height: 500px; background-color: #14758d; position:absolute; left: 0;}
+		section#content>nav.aside{width: 200px; height: 500px; background-color: orange; position: absolute; right: 0;}
+
+		footer#footer{width: 960px; height: 100px;margin:0 auto; background-color:#cdcdcd; text-align: center; line-height: 100px}
+
+		div.visual_wrap img{width: 100%;}
+
+	</style>
+
+	<!-- script:src -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,mode:'fade'});
+		});
+	</script>
+</head>
+<body>
+	<header id="main_header">
+		<h1>LOGO</h1>
+		<nav class="nav_gnb">nav_gnb</nav>
+		<nav class="nav_lnb">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<div class="visual_wrap">
+	<!-- 	ul.slider>li*3>img[src='images/pc0$.jpg'] -->
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt=""></li>
+			<li><img src="images/pc02.jpg" alt=""></li>
+			<li><img src="images/pc03.jpg" alt=""></li>
+		</ul>
+
+	</div>
+	<section id="content">
+		<nav class="main_section">main_section</nav>
+		<nav class="aside">aside</nav>
+	</section>	
+	<footer id="footer">main_footer</footer>
+
+</body>
+</html>
