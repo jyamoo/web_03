@@ -14,7 +14,9 @@
 
 		/*header layout*/
 		header#main_header{width: 960px; height: 160px; margin:0 auto; background-color: skyblue; position: relative;}
-		header#main_header>h1{width: 150px; height: 160px; background-color: red; text-align: center; line-height: 160px;}
+		header#main_header>h1{width: 150px;height: 160px;background:orange;text-align:center;line-height:160px;
+			text-indent:-2000px;
+			background:url(../images/testimg.jpg) center;}
 		header#main_header>nav.nav_gnb{position: absolute;width: 400px;height: 60px; background-color: pink; top:0; right: 0px;}
 		header#main_header>nav.nav_lnb{position: absolute;width: 700px;height: 60px; background-color: #fff; bottom: 0px; right: 0; text-align: center; line-height: 60px;}
 		header#main_header>nav.nav_lnb>ul{width: 100%}
@@ -38,13 +40,13 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({auto:true,mode:'fade'});
+			$(".slider").bxSlider();
 		});
 	</script>
 </head>
 <body>
 	<header id="main_header">
-		<h1>LOGO</h1>
+		<h1><a href="http://www.naver.com">삼성물산</a></h1>
 		<nav class="nav_gnb">nav_gnb</nav>
 		<nav class="nav_lnb">
 			<ul class="clearfix">
