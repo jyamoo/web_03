@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+
+	<style>
+		/*reset*/
+		*{padding:0; margin:0; box-sizing: border-box;}
+		li{list-style: none;}
+		a:link,a:visited{text-decoration: none; color:#000;}
+		.clearfix:after{content:""; clear:both;display: block;}
+
+		div.menu_wrap{}
+		div.menu_wrap>ul{width: 1000px; margin:0 auto;}
+		div.menu_wrap>ul>li{float:left; background: green; }
+		div.menu_wrap>ul>li>a{display:block; line-height: 40px; width: 200px; text-align: center; font-weight: bold}
+		div.menu_wrap>ul>li:hover{background: orange;}
+
+		div.menu_wrap ul.sub{display:none;}
+		div.menu_wrap>ul>li:hover ul.sub{display: block;}
+		ul.sub{}
+		ul.sub>li{text-align: center; line-height: 30px}
+	</style>
+</head>
+<body>
+	<div class="menu_wrap">
+		<!-- ul>li*5>a[#]>{menu$} -->
+		<ul class="clearfix">
+			<li><a href="#">menu1</a>
+				<ul class="sub">
+					<li>submenu</li>
+					<li>submenu</li>
+					<li>submenu</li>
+				</ul>
+			</li>
+			<li><a href="#">menu2</a>
+				<ul class="sub">
+					<li>submenu</li>
+					<li>submenu</li>
+					<li>submenu</li>
+				</ul>
+			</li>
+			<li><a href="#">menu3</a>
+				<ul class="sub">
+					<li>submenu</li>
+					<li>submenu</li>
+					<li>submenu</li>
+				</ul>
+			</li>
+			<li><a href="#">menu4</a>
+				<ul class="sub">
+					<li>submenu</li>
+					<li>submenu</li>
+					<li>submenu</li>
+				</ul>
+			</li>
+			<li><a href="#">menu5</a>
+				<ul class="sub">
+					<li>submenu</li>
+					<li>submenu</li>
+					<li>submenu</li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>
