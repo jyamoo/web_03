@@ -12,15 +12,19 @@
 		.clearfix:after{content:""; clear:both;display: block;}
 
 		div.menu_wrap{}
-		div.menu_wrap>ul{width: 1000px; margin:0 auto;}
+		div.menu_wrap>ul{width: 1000px; margin:0 auto; height: 40px}
 		div.menu_wrap>ul>li{float:left; background: green; }
 		div.menu_wrap>ul>li>a{display:block; line-height: 40px; width: 200px; text-align: center; font-weight: bold}
 		div.menu_wrap>ul>li:hover{background: orange;}
 
 		div.menu_wrap ul.sub{display:none;}
 		div.menu_wrap>ul>li:hover ul.sub{display: block;}
-		ul.sub{}
+		ul.sub{width: 100%;}
 		ul.sub>li{text-align: center; line-height: 30px}
+
+
+		/*visual_wrap*/
+		.visual_wrap{height: 400px; background: gray;}
 	</style>
 </head>
 <body>
@@ -65,5 +69,6 @@
 
 		</ul>
 	</div>
+	<div class="visual_wrap"></div>
 </body>
 </html>
