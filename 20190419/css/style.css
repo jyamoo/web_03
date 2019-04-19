@@ -37,13 +37,49 @@ div.visual .img02{left: 0; top:70px;}
 section.main_banner{background:#eeeeee;}
 section.main_banner .banner{width: 980px; margin: 0 auto;}
 div.banner>ul{width: 100%;}
-div.banner>ul>li{float: left; width: 20%;height: 200px;}
+div.banner>ul>li{float: left; width: 20%;height: 200px; text-align: center; color:#fff; cursor: pointer;}
 div.banner>ul>li:nth-child(1){background-color: #7c99b9;}
 div.banner>ul>li:nth-child(2){background-color: #4f74a1;}
 div.banner>ul>li:nth-child(3){background-color: #4b8ce0;}
 div.banner>ul>li:nth-child(4){background-color: #3db5f2;}
 div.banner>ul>li:nth-child(5){background-color: #95c8ff;}
-div.banner>ul>li>.card{}
-div.banner>ul>li>.card-body{}
-div.banner>ul>li>.card-title{}
-div.banner>ul>li>.card-text{}
+
+div.banner>ul>li:nth-child(1):hover,
+div.banner>ul>li:nth-child(2):hover,
+div.banner>ul>li:nth-child(3):hover,
+div.banner>ul>li:nth-child(4):hover,
+div.banner>ul>li:nth-child(5):hover{background-color: #336eac;}
+div.banner>ul>li .card{width: 100%; padding:15px;}
+div.banner>ul>li img{display: block; margin:0 auto;}
+div.banner>ul>li .card-body{padding-top:10px;}
+div.banner>ul>li .card-title{margin-bottom: 5px; font-weight: bold;}
+div.banner>ul>li .card-text{}
+
+
+/*section main-article*/
+section.main_article{padding-top: 50px}
+section.main_article .article{width: 980px; margin: 0 auto;}
+div.article>ul{width: 100%;}
+div.article>ul>li{float: left; width: 310px; margin-right: 25px;}
+div.article>ul>li:last-child{margin-right: 0;}
+div.article>ul>li .card{width: 100%;}
+div.article>ul>li img{display: block;}
+div.article>ul>li .card-body{border:1px solid #ddd; padding:15px;}
+div.article>ul>li .card-title{margin-bottom: 10px}
+div.article>ul>li .card-text{}
+
+/*sention main_information*/
+section.main_information{padding-top: 30px}
+section.main_information .information{width: 980px; margin:0 auto;}
+div.information>ul{}
+div.information>ul>li{float: left; width: 310px; margin-right: 25px; position: relative;
+	border:1px solid #ddd; padding:15px;height: 180px; overflow: hidden;}
+div.information>ul>li:last-child{margin-right: 0}
+div.information>ul>li .card{}
+div.information>ul>li img{position: absolute; right: -20px}
+div.information>ul>li .card-body{width: 120px;}
+div.information>ul>li .card-title{}
+div.information>ul>li .card-text{}
+div.information>ul>li .card-text2{color:blue; font-size:13px; font-weight:bold; position: absolute; left:15px; bottom:15px;}
+
+
